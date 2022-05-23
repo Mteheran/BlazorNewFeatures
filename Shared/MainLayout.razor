@@ -11,7 +11,16 @@
         </div>
 
         <article class="content px-4">
+            
+<ErrorBoundary>
+    <ChildContent>
             @Body
+             </ChildContent>
+    <ErrorContent>
+        <p class="errorUI">There is an error in the application</p>
+    </ErrorContent>
+</ErrorBoundary>
+
         </article>
     </main>
 </div>
